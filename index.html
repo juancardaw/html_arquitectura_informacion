@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-    <!--Pestaña de navegacion principal con imagen y titulo-->
+    <!--Cabecera de la pestaña de navegacion principal con imagen y titulo-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/asset/favicon_logo_JC.png">
+    <link rel="icon" type="image" href="/asset/favicon_logo_JC.png">
     <title>GIMNASIO JC</title>
 </head>
 
 <body>
 
-    <!--Cabezara de mi Pagina web-->
+    <!--Cabezarade mi agina web con menu principal a traves de una lista y con imagen principal, dividido en secciones-->
     <section>
         <header>
             <h1>GIMNASIO JC</h1>
             <h2>Tus objetivos, a tu alcance.</h2>
 
-                <!--Menu principal con link navegable-->
+                <!--Menu principal con link navegable con archivos HTML en mi carpeta /enlaces/...-->
                 <section>
                     <nav>
                         <ul>
-                        <li><a href="/conocenos.html">Conócenos</a></li>
-                        <li><a href="/tienda.html">Tienda</a></li>
-                        <li><a href="/consejos.html">Consejos</a></li>
-                        <li><a href="/donde_estamos.html">Donde estamos</a></li>
+                        <li><a href="/enlaces/conocenos.html">Conócenos</a></li>
+                        <li><a href="enlaces/tienda.html">Tienda</a></li>
+                        <li><a href="enlaces/consejos.html">Consejos</a></li>
+                        <li><a href="enlaces/donde_estamos.html">Donde estamos</a></li>
                         </ul>
                     </nav>
                 </section>
 
-                <!--Foto principal-->
+                <!--Foto principal de la cabecera de mi pagina web-->
                 <section>
                     <picture>
                         <figure>
@@ -39,33 +39,43 @@
         </header>
     </section>
 
-     <!--Contenido principal--> 
+     <!--Contenido principal de mi pagina web con la etiqueta <article>--> 
     <section>
         <main>
             <section>
+                <article>
                 <h3><strong>Tu mejor gimnasio, cerca de ti</strong></h3>
                 <p><strong><em>El mejor material, los mejores profesionales. Siente tus musculos como si no hubiera un mañana</em></strong></p>
                 <p>Ven, entrena con nosotros. Toda nuestra gama de maquinas de la marca <strong>Hammer</strong>. Entrenadores <strong>con Titulacion Oficinal</strong>. Clases <strong>coletivas</strong> e <strong>individuales</strong> con tu entrenador personal asignado.</p>
+                </article>
             </section>
         </main>
     </section>
     
-        <!--Contenido secundario-->
+        <!--Contenido secundario de mi pagina web-->
     <section>
         <aside>
             <h2>Nuestras clases mas solicitadas</h2>
-            <!--lista de botones con enlaces-->
+            <!--Lista de botones con enlaces redirigiendo hacia otro archivo HTML,de la carpeta /enlaces/...-->
             <ul>
-                <li><button role="link" onclick="window.location='/boxeo.html'">Boxeo</button></li>
-                <li><button role="link" onclick="window.location='/body_combat.html'">Body Combat</button></li>
-                <li><button role="link" onclick="window.location='/Judo.html'">Judo</button></li>
+                <li><button role="link" onclick="window.location='/enlaces/boxeo.html'">Boxeo</button></li>
+                <li><button role="link" onclick="window.location='/enlaces/body_combat.html'">Body Combat</button></li>
+                <li><button role="link" onclick="window.location='/enlaces/Judo.html'">Judo</button></li>
             </ul>
         </aside>
     </section>
 
-        <!--Formulario-->
+        <!--Video sacado de youtube con enlace predeterminado-->
     <section>
-        <form action="Registro_posible_cliente">
+        <h2>Consejos basicos de alimentación</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kKeYjcuaKPQ?si=hGjetOj6iZGS4tO1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+        <!--Formulario de resgistro del cliente-->
+    <section>
+        <form action="registro_posible_cliente">
+            <h3>¿Deseas informacón extra de nuestras instalaciones?</h3>
+            <p>Rellena nuestro formulario, y te llamara un asesor.</p>
             <input type="text" name="Nombre" placeholder="Nombre completo">
             <input type="email" name="Correo" placeholder="Email">
             <input type="textarea" name="Mensaje" placeholder="Dudas o preguntas">
@@ -73,12 +83,16 @@
         </form>
     </section>
 
-    <!--Pie de pagina-->
-    <footer>
-        <p><strong><em>Copyright: JC Gimnasio 2024</em><strong></p>
+    <!--Pie de pagina con formulario-->
+    <section>
+    <footer>    
         <ul>
-            
+            <li><a href="/enlaces/aviso_Legal.html">Aviso Legal</a></li>
+            <li><a href="/enlaces/cookies.html">Cookies</a></li>
+            <li><a href="/enlaces/Politica_privacidad.html">Politica de Privacidad JCGYM</a></li>
         </ul>
+        <p><strong><em>Copyright: JC Gimnasio 2024</em><strong></p>
     </footer>
+    </section>
         
 </html>
